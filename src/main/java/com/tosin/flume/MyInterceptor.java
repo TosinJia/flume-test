@@ -37,7 +37,7 @@ public class MyInterceptor implements Interceptor {
     public List<Event> intercept(List<Event> list) {
         List<Event> eventList = new ArrayList<>();
         for (Event event : list) {
-            eventList.add(event);
+            eventList.add(intercept(event));
         }
         return eventList;
     }
