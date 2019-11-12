@@ -8,12 +8,22 @@
     <artifactId>flume-test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <version.flume>1.8.0</version.flume>
+    </properties>
+
     <dependencies>
         <!-- flume核心依赖 -->
         <dependency>
             <groupId>org.apache.flume</groupId>
             <artifactId>flume-ng-core</artifactId>
-            <version>1.8.0</version>
+            <version>${version.flume}</version>
+        </dependency>
+        <!-- flume -->
+        <dependency>
+            <groupId>org.apache.flume</groupId>
+            <artifactId>flume-ng-configuration</artifactId>
+            <version>${version.flume}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/junit/junit <scope>test</scope> -->
